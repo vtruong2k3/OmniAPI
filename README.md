@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/logo.svg" alt="Sub2API Logo" width="128" />
+<img src="assets/logo.svg" alt="OmniAPI Logo" width="128" />
 
-# Sub2API
+# OmniAPI
 
 [![Go](https://img.shields.io/badge/Go-1.27.0-00ADD8.svg)](https://golang.org/)
 [![Vue](https://img.shields.io/badge/Vue-3.4+-4FC08D.svg)](https://vuejs.org/)
@@ -10,9 +10,7 @@
 [![Redis](https://img.shields.io/badge/Redis-7+-DC382D.svg)](https://redis.io/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://www.docker.com/)
 
-<a href="https://trendshift.io/repositories/21823" target="_blank"><img src="https://trendshift.io/api/badge/repositories/21823" alt="Wei-Shaw%2Fsub2api | Trendshift" width="250" height="55"/></a>
-
-**AI API Gateway Platform for Subscription Quota Distribution**
+**OmniAPI - High-Performance Unified AI Gateway Platform**
 
 English | [中文](README_CN.md) | [日本語](README_JA.md)
 
@@ -188,18 +186,21 @@ Please read the following carefully before using this project:
 
 ## Overview
 
-Sub2API is an AI API gateway platform designed to distribute and manage API quotas from AI product subscriptions. Users can access upstream AI services through platform-generated API Keys, while the platform handles authentication, billing, load balancing, and request forwarding.
+OmniAPI is an enterprise-grade AI API gateway platform designed to distribute, proxy, and intelligently load-balance API quotas across major AI model providers (Claude, OpenAI, Gemini, DeepSeek, Grok, Meta, Mistral, Qwen). Users can access upstream AI services through platform-generated API Keys, while the platform handles token-level accounting, intelligent failover, load balancing, sticky sessions, and request optimization.
 
 ## Features
 
 - **Multi-Account Management** - Support multiple upstream account types (OAuth, API Key)
-- **API Key Distribution** - Generate and manage API Keys for users
-- **Precise Billing** - Token-level usage tracking and cost calculation
-- **Smart Scheduling** - Intelligent account selection with sticky sessions
+- **Interactive 3D Gateway Core** - Three.js real-time visual globe with orbiting provider satellites & laser data streams
+- **Model Ecosystem Marquee** - Full-width infinite slider displaying verified SVG badges for top AI providers
+- **Sliding Dual-Panel Auth** - Liquid morphing curve transition (0.65s) between Sign In & Sign Up with dark/light mode
+- **API Key Distribution** - Generate and manage API Keys for users with fine-grained ACL
+- **Precise Billing** - Token-level usage tracking, prompt caching discounts, and cost calculation
+- **Smart Scheduling** - Intelligent account selection with sticky sessions & health monitoring
 - **Concurrency Control** - Per-user and per-account concurrency limits
 - **Rate Limiting** - Configurable request and token rate limits
-- **Built-in Payment System** - Supports EasyPay, Alipay, WeChat Pay, and Stripe for user self-service top-up, no separate payment service needed ([Configuration Guide](docs/PAYMENT.md))
-- **Admin Dashboard** - Web interface for monitoring and management
+- **Built-in Payment System** - Supports EasyPay, Alipay, WeChat Pay, and Stripe for user self-service top-up ([Configuration Guide](docs/PAYMENT.md))
+- **Admin Dashboard** - Web interface for monitoring, channel status, and management
 - **Composite Groups** - Admin routing layer that resolves requested models to concrete providers for multi-provider groups ([Operator Guide](docs/COMPOSITE_GROUPS.md))
 - **External System Integration** - Embed external systems (e.g. ticketing) via iframe to extend the admin dashboard
 
@@ -346,8 +347,8 @@ If you prefer manual setup:
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Wei-Shaw/sub2api.git
-cd sub2api/deploy
+git clone https://github.com/vtruong2k3/OmniAPI.git
+cd OmniAPI/deploy
 
 # 2. Copy environment configuration
 cp .env.example .env
@@ -478,8 +479,8 @@ rm -rf data/ postgres_data/ redis_data/
 Apple-silicon Macs running macOS 26 can run the full Sub2API, PostgreSQL, and Redis stack with Apple `container` 1.1.0 or newer:
 
 ```bash
-git clone https://github.com/Wei-Shaw/sub2api.git
-cd sub2api/deploy
+git clone https://github.com/vtruong2k3/OmniAPI.git
+cd OmniAPI/deploy
 ./apple-container.sh init
 ./apple-container.sh up
 ./apple-container.sh status
@@ -504,8 +505,8 @@ Build and run from source code for development or customization.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Wei-Shaw/sub2api.git
-cd sub2api
+git clone https://github.com/vtruong2k3/OmniAPI.git
+cd OmniAPI
 
 # 2. Install pnpm (if not already installed)
 npm install -g pnpm
