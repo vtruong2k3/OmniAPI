@@ -207,7 +207,7 @@
             <!-- Subtitle Badge -->
             <div class="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-1.5 shadow-sm backdrop-blur-md">
               <span class="flex h-2 w-2 animate-pulse rounded-full bg-cyan-400"></span>
-              <span class="font-mono text-xs font-semibold text-cyan-300">⚡ Sub2API 2.0 &bull; Intelligent Model &amp; Quota Router</span>
+              <span class="font-mono text-xs font-semibold text-cyan-300">⚡ OmniAPI 2.0 &bull; Intelligent Model &amp; Quota Router</span>
             </div>
 
             <!-- Main Headline -->
@@ -435,7 +435,7 @@ const authStore = useAuthStore()
 const appStore = useAppStore()
 
 // Site settings - directly from appStore (already initialized from injected config)
-const siteName = computed(() => appStore.cachedPublicSettings?.site_name || appStore.siteName || 'Sub2API')
+const siteName = computed(() => appStore.cachedPublicSettings?.site_name || appStore.siteName || 'OmniAPI')
 const siteLogo = computed(() => sanitizeUrl(appStore.cachedPublicSettings?.site_logo || appStore.siteLogo || '', { allowRelative: true, allowDataUrl: true }))
 const siteSubtitle = computed(() => appStore.cachedPublicSettings?.site_subtitle || 'AI API Gateway Platform')
 const docUrl = computed(() => sanitizeUrl(appStore.cachedPublicSettings?.doc_url || appStore.docUrl || ''))

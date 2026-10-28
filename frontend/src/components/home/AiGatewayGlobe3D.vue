@@ -784,7 +784,7 @@ onBeforeUnmount(() => {
         <span class="relative inline-flex h-2 w-2 rounded-full bg-cyan-500"></span>
       </span>
       <span class="font-mono text-[11px] font-medium tracking-wide text-cyan-700 dark:text-cyan-300">
-        SUB2API QUANTUM ROUTING CORE • 60 FPS
+        OMNIAPI QUANTUM ROUTING CORE • 60 FPS
       </span>
     </div>
   </div>

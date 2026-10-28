@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="fav-bg" x1="64" y1="32" x2="448" y2="480" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#071924"/>
+      <stop offset="100%" stop-color="#02080d"/>
+    </linearGradient>
+    <linearGradient id="fav-ribbon" x1="120" y1="120" x2="390" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="35%" stop-color="#10b981"/>
+      <stop offset="70%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="24" y="24" width="464" height="464" rx="120" fill="url(#fav-bg)"/>
+  <rect x="24" y="24" width="464" height="464" rx="120" fill="none" stroke="#2dd4bf" stroke-opacity="0.3" stroke-width="4"/>
+
+  <!-- Iconic Omni "O" Ribbon for Favicon -->
+  <circle cx="256" cy="256" r="130" fill="none" stroke="url(#fav-ribbon)" stroke-width="56" stroke-linecap="round"/>
+  <circle cx="256" cy="256" r="65" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="12"/>
+  <circle cx="256" cy="256" r="26" fill="#38bdf8"/>
+  <circle cx="256" cy="256" r="12" fill="#ffffff"/>
+</svg>

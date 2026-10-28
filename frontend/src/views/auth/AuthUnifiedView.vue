@@ -172,7 +172,7 @@ function initTheme() {
 }
 
 // Brand metadata
-const siteName = computed(() => appStore.siteName || 'Sub2API')
+const siteName = computed(() => appStore.siteName || 'OmniAPI')
 const siteLogo = computed(() => sanitizeUrl(appStore.siteLogo || '', { allowRelative: true, allowDataUrl: true }))
 const currentYear = computed(() => new Date().getFullYear())
 
